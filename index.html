@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>VW Nordeste — Auditoria de Vendas 2022–2024</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
 :root {
@@ -308,8 +309,10 @@ section{padding:80px 2rem}
   width:38px;height:38px;border-radius:10px;
   background:var(--si,rgba(74,143,255,0.12));
   display:flex;align-items:center;justify-content:center;
-  font-size:18px;margin-bottom:.9rem;
+  font-size:16px;margin-bottom:.9rem;
 }
+.strat-icon i{line-height:1}
+.icon-inline{font-size:12px;margin-left:4px;vertical-align:baseline}
 .strat-title{font-family:'Syne',sans-serif;font-weight:700;font-size:15px;color:var(--text);margin-bottom:.4rem}
 .strat-body{font-size:13px;color:var(--muted);line-height:1.6}
 .strat-tag{
@@ -597,7 +600,7 @@ footer{
           <div class="rank-item"><div class="rank-pos" style="font-size:14px;color:var(--muted)">2022</div><div class="rank-name">Carlos Silva</div><div class="rank-val">R$ 5,35 mi</div></div>
           <div class="rank-item"><div class="rank-pos gold">2023</div><div class="rank-name">Lucas Almeida</div><div class="rank-val">R$ 5,24 mi</div></div>
           <div class="rank-item"><div class="rank-pos" style="font-size:14px;color:var(--muted)">2023</div><div class="rank-name">Carlos Silva</div><div class="rank-val">R$ 5,10 mi</div></div>
-          <div class="rank-item" style="border-color:rgba(74,222,128,0.3);background:rgba(74,222,128,0.05)"><div class="rank-pos gold">2024</div><div class="rank-name">Camila Araújo ⭐</div><div class="rank-val" style="color:var(--green)">R$ 6,48 mi</div></div>
+          <div class="rank-item" style="border-color:rgba(74,222,128,0.3);background:rgba(74,222,128,0.05)"><div class="rank-pos gold">2024</div><div class="rank-name">Camila Araújo <i class="fa-solid fa-star icon-inline" aria-label="destaque"></i></div><div class="rank-val" style="color:var(--green)">R$ 6,48 mi</div></div>
           <div class="rank-item"><div class="rank-pos" style="font-size:14px;color:var(--muted)">2024</div><div class="rank-name">Carlos Silva</div><div class="rank-val">R$ 6,14 mi</div></div>
         </div>
       </div>
@@ -638,37 +641,37 @@ footer{
 
     <div class="strategy-grid">
       <div class="strat-card" style="--sc:var(--blue);--si:rgba(74,143,255,0.12)">
-        <div class="strat-icon">📊</div>
+        <div class="strat-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
         <div class="strat-title">Replicar os top performers</div>
         <div class="strat-body">Identificar as práticas de Camila Araújo e Carlos Silva e aplicar como metodologia de treinamento para todos os vendedores da rede NE.</div>
         <div class="strat-tag">Equipe de Vendas</div>
       </div>
       <div class="strat-card" style="--sc:var(--teal);--si:rgba(45,212,160,0.12)">
-        <div class="strat-icon">🗺️</div>
+        <div class="strat-icon"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></div>
         <div class="strat-title">Fortalecer filiais fracas</div>
         <div class="strat-body">As filiais de Imperatriz MA e Caxias MA têm faturamento até 6x menor que Parnamirim RN. Plano de ação com metas individuais e suporte comercial.</div>
         <div class="strat-tag">Gestão Comercial</div>
       </div>
       <div class="strat-card" style="--sc:var(--amber);--si:rgba(245,158,11,0.12)">
-        <div class="strat-icon">📅</div>
+        <div class="strat-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></div>
         <div class="strat-title">Campanhas nos meses fracos</div>
         <div class="strat-body">Janeiro, março e outubro são recorrentemente os piores meses. Criar promoções, condições especiais de financiamento e ações de marketing nesses períodos.</div>
         <div class="strat-tag">Marketing</div>
       </div>
       <div class="strat-card" style="--sc:var(--coral);--si:rgba(248,113,113,0.12)">
-        <div class="strat-icon">🚙</div>
+        <div class="strat-icon"><i class="fa-solid fa-car-side" aria-hidden="true"></i></div>
         <div class="strat-title">Foco em Amarok e Taos</div>
         <div class="strat-body">Amarok lidera vendas há 2 anos consecutivos. Taos cresce aceleradamente. Investir em mix, estoque e comunicação desses modelos em toda a rede.</div>
         <div class="strat-tag">Produto + Estoque</div>
       </div>
       <div class="strat-card" style="--sc:var(--purple);--si:rgba(168,139,250,0.12)">
-        <div class="strat-icon">📍</div>
+        <div class="strat-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
         <div class="strat-title">Marketing digital no NE</div>
         <div class="strat-body">RN, PE e BA concentram as melhores filiais. Concentrar esforços de mídia digital e geolocalizada nessas regiões para ampliar a base de clientes ativos.</div>
         <div class="strat-tag">Marketing Digital</div>
       </div>
       <div class="strat-card" style="--sc:var(--green);--si:rgba(74,222,128,0.12)">
-        <div class="strat-icon">🎯</div>
+        <div class="strat-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
         <div class="strat-title">Dashboard de monitoramento</div>
         <div class="strat-body">Implantar acompanhamento mensal de KPIs por filial, com gatilho de alerta quando performance cair 15% abaixo da meta. Reunião trimestral de revisão.</div>
         <div class="strat-tag">Monitoramento</div>
