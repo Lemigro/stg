@@ -1,0 +1,43 @@
+---
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import DashboardSlides from '../components/DashboardSlides.vue';
+import HeaderHero from '../components/sections/HeaderHero.astro';
+import StrategySection from '../components/sections/StrategySection.astro';
+import BpmnSection from '../components/sections/BpmnSection.astro';
+import SiteFooter from '../components/sections/SiteFooter.astro';
+import '../styles/site.css';
+
+const legacyPath = join(process.cwd(), 'index.legacy.html');
+const legacy = readFileSync(legacyPath, 'utf8');
+
+function between(source, startMark, endMark) {
+	const start = source.indexOf(startMark);
+	const end = source.indexOf(endMark);
+
+	if (start === -1 || end === -1 || end <= start) {
+		return '';
+	}
+
+	return source.slice(start, end).trim();
+}
+
+const dashboardSlides = between(legacy, '<section id="dashboard">', '<section id="estrategia">');
+---
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>VW Nordeste — Auditoria de Vendas 2022–2024</title>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+	<HeaderHero />
+	<DashboardSlides html={dashboardSlides} client:load />
+	<StrategySection />
+	<BpmnSection />
+	<SiteFooter />
+</body>
+</html>
